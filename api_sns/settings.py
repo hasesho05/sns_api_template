@@ -12,7 +12,7 @@ env.read_env(os.path.join(BASE_DIR, ".env"))
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "wte^m58$suf4dzkye6v*d%m4v-@y107)dtcc*3g(z(6e)q8gtu"
+SECRET_KEY = os.environ["SECRET_KEY"]
 
 # SECURITY WARNING: don't run with debug turned on in production!
 if os.environ["DEBUG"] == "true":
@@ -105,7 +105,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
-LANGUAGE_CODE = "js"
+LANGUAGE_CODE = "jp"
 
 TIME_ZONE = "UTC"
 
